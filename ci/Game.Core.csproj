@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Unity의 Assets/Scripts/Game.Core 소스를 그대로 컴파일하는 CI용 프로젝트.
+       Unity 없이 dotnet build / dotnet test가 가능해지는 지점 (자동 채점 경로). -->
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <Nullable>disable</Nullable>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <AssemblyName>Game.Core</AssemblyName>
+    <RootNamespace>Game.Core</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../Assets/Scripts/Game.Core/**/*.cs" />
+  </ItemGroup>
+</Project>
