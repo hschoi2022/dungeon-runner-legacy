@@ -1,0 +1,7 @@
+<Project>
+  <!-- 두 csproj가 같은 폴더에서 obj/bin을 공유해 복원 산출물이 서로 덮어쓰는 문제를 분리 -->
+  <PropertyGroup>
+    <BaseIntermediateOutputPath>obj/$(MSBuildProjectName)/</BaseIntermediateOutputPath>
+    <BaseOutputPath>bin/$(MSBuildProjectName)/</BaseOutputPath>
+  </PropertyGroup>
+</Project>
