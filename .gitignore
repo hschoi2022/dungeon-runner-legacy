@@ -16,6 +16,7 @@
 crashlytics-build.properties
 # Unity가 생성하는 루트 솔루션/프로젝트 (ci/ 폴더의 것은 추적한다)
 /*.sln
+!/DungeonRunner.sln
 /*.csproj
 # .NET (ci 빌드 산출물)
 ci/bin/
